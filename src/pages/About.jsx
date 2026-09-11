@@ -43,7 +43,7 @@ function About() {
           {contentBlocks.map((block, index) => (
             <section
               key={block.title}
-              className="rounded-3xl border border-[#1C2A2F] bg-[linear-gradient(180deg,#101B1E_0%,#0D1719_100%)] p-8 shadow-[0_16px_40px_rgba(0,0,0,0.2)] transition-transform duration-300 hover:-translate-y-0.5"
+              className="rounded-3xl border border-[#1C2A2F] bg-[linear-gradient(180deg,#101B1E_0%,#0D1719_100%)] p-6 shadow-[0_16px_40px_rgba(0,0,0,0.2)] transition-transform duration-300 hover:-translate-y-0.5 sm:p-8"
               style={{ animationDelay: `${index * 70}ms` }}
             >
               <h2 className="text-2xl font-bold text-[#EAF5F1]">{block.title}</h2>

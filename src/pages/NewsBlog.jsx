@@ -27,12 +27,12 @@ function NewsBlog() {
         <PageMeta title={articleDetail.title} description={articleDetail.excerpt} />
         <main className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="rounded-3xl border border-[#E5E5E5] bg-white p-4 shadow-sm sm:p-6">
-            <img src={articleDetail.image} alt={articleDetail.title} className="h-72 w-full rounded-2xl object-cover sm:h-96" />
-            <div className="mt-6 flex flex-wrap items-center gap-3 text-xs font-semibold uppercase tracking-[0.12em] text-[#16A34A]">
+            <img src={articleDetail.image} alt={articleDetail.title} className="h-56 w-full rounded-2xl object-cover sm:h-96" />
+            <div className="mt-6 flex flex-wrap items-center gap-3 text-xs font-semibold uppercase tracking-[0.12em] text-[#14D17A]">
               <span>{articleDetail.category}</span>
               <span className="text-[#888888]">{articleDetail.date}</span>
             </div>
-            <h1 className="mt-4 text-4xl font-bold tracking-tight text-[#222222]">{articleDetail.title}</h1>
+            <h1 className="mt-4 text-3xl font-bold leading-tight tracking-tight text-[#222222] sm:text-4xl">{articleDetail.title}</h1>
             <p className="mt-4 text-lg leading-8 text-[#666666]">{articleDetail.excerpt}</p>
             <div className="mt-8 space-y-5 text-base leading-8 text-[#666666]">
               {articleDetail.content.map((paragraph) => (
@@ -40,7 +40,7 @@ function NewsBlog() {
               ))}
             </div>
             <div className="mt-8">
-              <Link to="/news-blog" className="inline-flex items-center gap-2 text-sm font-semibold text-[#16A34A] hover:text-[#15803D]">
+              <Link to="/news-blog" className="inline-flex items-center gap-2 text-sm font-semibold text-[#14D17A] hover:text-[#5AF0AE]">
                 <ArrowRight size={16} className="rotate-180" /> Back to News & Blog
               </Link>
             </div>
@@ -70,7 +70,7 @@ function NewsBlog() {
                 value={query}
                 onChange={(event) => setQuery(event.target.value)}
                 placeholder="Search articles..."
-                className="w-full rounded-full border border-[#E5E5E5] bg-[#F7F7F7] py-3 pl-11 pr-4 text-base text-[#222222] outline-none transition focus:border-[#16A34A]"
+                className="w-full rounded-full border border-[#1C2A2F] bg-[#101B1E] py-3 pl-11 pr-4 text-base text-[#EAF5F1] outline-none transition focus:border-[#14D17A]"
               />
             </div>
           </div>
@@ -81,15 +81,15 @@ function NewsBlog() {
             <div className="relative h-full min-h-[320px]">
               <img src={featuredArticle.image} alt={featuredArticle.title} className="h-full w-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-[#111111]/75 via-[#111111]/15 to-transparent" />
-              <div className="absolute inset-x-0 bottom-0 p-6 text-white md:p-8">
-                <span className="inline-flex rounded-full bg-[#16A34A] px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em]">
+              <div className="absolute inset-x-0 bottom-0 p-5 text-white sm:p-8">
+                <span className="inline-flex rounded-full bg-[#14D17A] px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-[#07110E]">
                   {featuredArticle.category}
                 </span>
-                <h2 className="mt-4 text-3xl font-bold tracking-tight">{featuredArticle.title}</h2>
+                <h2 className="mt-4 text-2xl font-bold leading-tight tracking-tight sm:text-3xl">{featuredArticle.title}</h2>
                 <p className="mt-3 max-w-xl text-base leading-7 text-white/80">{featuredArticle.excerpt}</p>
                 <div className="mt-5 flex items-center gap-4">
                   <span className="text-sm text-white/70">{featuredArticle.date}</span>
-                  <Link to={`/news-blog/${featuredArticle.slug}`} className="inline-flex items-center gap-2 text-sm font-semibold text-[#16A34A] hover:text-[#15803D]">
+                  <Link to={`/news-blog/${featuredArticle.slug}`} className="inline-flex items-center gap-2 text-sm font-semibold text-[#14D17A] hover:text-[#5AF0AE]">
                     Read More <ArrowRight size={16} />
                   </Link>
                 </div>
@@ -102,7 +102,7 @@ function NewsBlog() {
                 {['Guide', 'Updates', 'Safety', 'Overview', 'News'].map((category) => (
                   <li key={category} className="flex items-center justify-between rounded-xl border border-[#E5E5E5] bg-white px-4 py-3">
                     <span>{category}</span>
-                    <span className="font-semibold text-[#16A34A]">{articles.filter((article) => article.category === category).length}</span>
+                    <span className="font-semibold text-[#14D17A]">{articles.filter((article) => article.category === category).length}</span>
                   </li>
                 ))}
               </ul>
@@ -114,13 +114,13 @@ function NewsBlog() {
           {filteredArticles.map((article) => (
             <div key={article.id} className="rounded-2xl border border-[#E5E5E5] bg-white p-4 shadow-sm">
               <img src={article.image} alt={article.title} className="h-52 w-full rounded-2xl object-cover" />
-              <div className="mt-5 flex items-center justify-between text-xs font-semibold uppercase tracking-[0.12em] text-[#16A34A]">
+              <div className="mt-5 flex items-center justify-between text-xs font-semibold uppercase tracking-[0.12em] text-[#14D17A]">
                 <span>{article.category}</span>
                 <span className="text-[#888888]">{article.date}</span>
               </div>
-              <h3 className="mt-4 text-2xl font-bold text-[#222222]">{article.title}</h3>
+              <h3 className="mt-4 text-xl font-bold leading-tight text-[#222222] sm:text-2xl">{article.title}</h3>
               <p className="mt-3 text-base leading-7 text-[#666666]">{article.excerpt}</p>
-              <Link to={`/news-blog/${article.slug}`} className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#16A34A] hover:text-[#15803D]">
+              <Link to={`/news-blog/${article.slug}`} className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#14D17A] hover:text-[#5AF0AE]">
                 Read More <ArrowRight size={16} />
               </Link>
             </div>

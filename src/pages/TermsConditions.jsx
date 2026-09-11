@@ -49,7 +49,7 @@ function TermsConditions() {
 
         <div className="mt-10 space-y-6">
           {sections.map((section) => (
-            <section key={section.title} className="rounded-3xl border border-[#E5E5E5] bg-white p-8 shadow-sm">
+            <section key={section.title} className="rounded-3xl border border-[#E5E5E5] bg-white p-6 shadow-sm sm:p-8">
               <h2 className="text-2xl font-bold text-[#222222]">{section.title}</h2>
               <p className="mt-4 text-base leading-8 text-[#666666]">{section.text}</p>
             </section>

@@ -34,7 +34,7 @@ function FeatureCards() {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.35, delay: index * 0.07 }}
           whileHover={{ y: -6, scale: 1.01 }}
-          className="group rounded-3xl border border-[#1C2A2F] bg-[linear-gradient(180deg,#101B1E_0%,#0D1719_100%)] p-6 shadow-[0_12px_35px_rgba(0,0,0,0.22)] transition-all duration-300 hover:border-[#14D17A]/40 hover:shadow-[0_18px_40px_rgba(20,209,122,0.12)]"
+          className="group rounded-3xl border border-[#1C2A2F] bg-[linear-gradient(180deg,#101B1E_0%,#0D1719_100%)] p-5 shadow-[0_12px_35px_rgba(0,0,0,0.22)] transition-all duration-300 hover:border-[#14D17A]/40 hover:shadow-[0_18px_40px_rgba(20,209,122,0.12)] sm:p-6"
         >
           <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-[#14D17A]/20 bg-[#14D17A]/10 text-[#14D17A] shadow-[0_0_18px_rgba(20,209,122,0.12)] transition-transform duration-300 group-hover:scale-105">
             <Icon size={22} />

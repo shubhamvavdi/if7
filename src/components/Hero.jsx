@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Download, Sparkles } from 'lucide-react';
 import { FT7_GAME_URL } from '../data/siteConfig';
 import CTAButton from './CTAButton';
+import BrandMark from './BrandMark';
 
 function Hero() {
   return (
@@ -18,7 +19,7 @@ function Hero() {
             <Sparkles size={12} /> FT7 GAME INFORMATION & UPDATES
           </span>
 
-          <h1 className="max-w-xl text-4xl font-extrabold tracking-[-0.05em] text-[#EAF5F1] sm:text-5xl lg:text-[48px]">
+          <h1 className="max-w-xl text-3xl font-extrabold leading-tight tracking-[-0.04em] text-[#EAF5F1] sm:text-5xl lg:text-[48px]">
             FT7 Game App: Features, Download Guide & Latest Details
           </h1>
 
@@ -26,7 +27,7 @@ function Hero() {
             Explore the FT7 Game App, its key features, available app details, and a clear guide for getting started.
           </p>
 
-          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:gap-4">
             <CTAButton href={FT7_GAME_URL}>OPEN FT7 GAME</CTAButton>
             <CTAButton href="/news-blog" variant="secondary" className="!border-[#1C2A2F] !bg-[#101B1E] !text-[#EAF5F1] hover:!text-[#14D17A]">READ LATEST UPDATES</CTAButton>
           </div>
@@ -49,6 +50,7 @@ function Hero() {
                 <span className="h-2.5 w-2.5 rounded-full bg-[#EAF5F1]/25" />
               </div>
               <div className="rounded-2xl bg-[#101B1E] p-5 text-[#EAF5F1]">
+                <div className="mb-5"><BrandMark compact /></div>
                 <div className="flex items-center justify-between text-xs uppercase tracking-[0.16em] text-[#A7B8B2]">
                   <span>FT7 GAME</span>
                   <span>Live</span>

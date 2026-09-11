@@ -119,10 +119,10 @@ function Home() {
                 ))}
               </div>
             </div>
-            <div className="grid grid-cols-3 gap-3 sm:gap-5">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-5">
               {FT7_SCREENSHOTS.map((image, index) => (
-                <div key={image} className="overflow-hidden rounded-3xl border border-[#1C2A2F] bg-[#101B1E] p-2 shadow-[0_16px_40px_rgba(0,0,0,0.25)]">
-                  <img src={image} alt={`FT7 Game app screen ${index + 1}`} className="h-full w-full rounded-2xl object-cover" />
+                <div key={image} className="mx-auto w-full max-w-[220px] overflow-hidden rounded-3xl border border-[#1C2A2F] bg-[#101B1E] p-2 shadow-[0_16px_40px_rgba(0,0,0,0.25)] sm:max-w-none">
+                  <img src={image} alt={`FT7 Game app screen ${index + 1}`} className="aspect-[9/16] h-auto w-full rounded-2xl object-cover" />
                 </div>
               ))}
             </div>
@@ -155,8 +155,8 @@ function Home() {
               </p>
             </div>
           </div>
-          <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-              {featureList.map((item) => (
+          <div className="mt-6 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+            {featureList.map((item) => (
               <div key={item} className="rounded-2xl border border-[#1C2A2F] bg-[#101B1E] p-5 text-[#EAF5F1]">
                 <CheckCircle2 size={18} className="text-[#14D17A]" />
                 <p className="mt-4 text-base leading-7">{item}</p>
