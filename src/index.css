@@ -8,8 +8,8 @@
   font-family: 'Inter', Arial, sans-serif;
   line-height: 1.6;
   font-weight: 400;
-  color: #eaf5f1;
-  background: #07110e;
+  color: #fff4d6;
+  background: #150305;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -24,9 +24,9 @@ body {
   margin: 0;
   min-width: 320px;
   background:
-    radial-gradient(circle at top, rgba(20, 209, 122, 0.12), transparent 36%),
-    linear-gradient(180deg, #07110e 0%, #091112 100%);
-  color: #eaf5f1;
+    radial-gradient(circle at top, rgba(168, 15, 27, 0.2), transparent 36%),
+    linear-gradient(180deg, #0d0203 0%, #2a080c 100%);
+  color: #fff4d6;
 }
 
 #root {
@@ -50,7 +50,7 @@ h5,
 h6 {
   margin: 0;
   font-family: 'Inter', Arial, sans-serif;
-  color: #eaf5f1;
+  color: #fff4d6;
 }
 
 p {
@@ -58,8 +58,8 @@ p {
 }
 
 ::selection {
-  background: rgba(20, 209, 122, 0.35);
-  color: #f5fff9;
+  background: rgba(245, 197, 66, 0.35);
+  color: #fffaf0;
 }
 
 summary::-webkit-details-marker {
@@ -71,7 +71,7 @@ summary {
 }
 
 :focus-visible {
-  outline: 2px solid #14d17a;
+  outline: 2px solid #f5c542;
   outline-offset: 2px;
 }
 
@@ -82,65 +82,102 @@ summary {
 }
 
 html[data-theme='light'] body {
-  background: #f3f8f5;
-  color: #12201c;
+  background: #fff8e8;
+  color: #351013;
 }
 
 html[data-theme='light'] [class*='bg-[#091112]'],
 html[data-theme='light'] [class*='bg-[#0D1719]'],
 html[data-theme='light'] [class*='bg-[#0B1316]'],
 html[data-theme='light'] [class*='bg-[#07110E]'] {
-  background: #f3f8f5 !important;
+  background: #fff8e8 !important;
 }
 
 html[data-theme='light'] [class*='bg-[#101B1E]'] {
-  background: #ffffff !important;
+  background: #fffdf7 !important;
 }
 
 html[data-theme='light'] [class*='bg-[#070B0D]'] {
-  background: #ffffff !important;
+  background: #fffaf0 !important;
 }
 
 html[data-theme='light'] [class*='text-[#EAF5F1]'] {
-  color: #12201c !important;
+  color: #351013 !important;
 }
 
 html[data-theme='light'] [class*='text-[#A7B8B2]'] {
-  color: #53635d !important;
+  color: #6f5b51 !important;
 }
 
 html[data-theme='light'] [class*='text-[#7E8D88]'] {
-  color: #6c7c75 !important;
+  color: #8d7568 !important;
 }
 
 html[data-theme='light'] [class*='border-[#1C2A2F]'] {
-  border-color: #dbe7e1 !important;
+  border-color: #e5c9a5 !important;
 }
 
 html[data-theme='light'] [class*='bg-[linear-gradient'] {
-  background: #ffffff !important;
+  background: #fffdf7 !important;
 }
 
 html[data-theme='dark'] [class*='bg-white'] {
-  background: #101b1e !important;
+  background: #2a080c !important;
 }
 
 html[data-theme='dark'] [class*='bg-[#F7F7F7]'] {
-  background: #0d1719 !important;
+  background: #1d0508 !important;
 }
 
 html[data-theme='dark'] [class*='border-[#E5E5E5]'] {
-  border-color: #1c2a2f !important;
+  border-color: #5b1a1d !important;
 }
 
 html[data-theme='dark'] [class*='text-[#222222]'] {
-  color: #eaf5f1 !important;
+  color: #fff4d6 !important;
 }
 
 html[data-theme='dark'] [class*='text-[#666666]'] {
-  color: #a7b8b2 !important;
+  color: #d8c9b2 !important;
 }
 
 html[data-theme='dark'] [class*='text-[#888888]'] {
-  color: #7e8d88 !important;
+  color: #b49f8f !important;
+}
+
+/* Keep legacy utility classes visually aligned with the FT7 logo palette. */
+[class*='bg-[#14D17A]'] {
+  background-color: #a80f1b !important;
+}
+
+[class*='text-[#14D17A]'] {
+  color: #f5c542 !important;
+}
+
+[class*='border-[#14D17A]'] {
+  border-color: #a80f1b !important;
+}
+
+[class*='hover:bg-[#0FAE66]']:hover {
+  background-color: #760811 !important;
+}
+
+[class*='hover:text-[#14D17A]']:hover {
+  color: #f5c542 !important;
+}
+
+[class*='hover:text-[#5AF0AE]']:hover {
+  color: #ffe28a !important;
+}
+
+[class*='hover:border-[#14D17A]']:hover {
+  border-color: #f5c542 !important;
+}
+
+[class*='bg-[#14D17A]/'] {
+  background-color: rgba(168, 15, 27, 0.2) !important;
+}
+
+[class*='from-[#07110E]'] {
+  --tw-gradient-from: #0d0203 var(--tw-gradient-from-position) !important;
 }

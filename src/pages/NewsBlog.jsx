@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { ArrowRight, Search } from 'lucide-react';
 import PageMeta from '../components/PageMeta';
 import SectionHeading from '../components/SectionHeading';
+import BrandMark from '../components/BrandMark';
 import { articles } from '../data/articles';
 
 function NewsBlog() {
@@ -26,6 +27,7 @@ function NewsBlog() {
       <>
         <PageMeta title={articleDetail.title} description={articleDetail.excerpt} />
         <main className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
+          <div className="mb-8"><BrandMark /></div>
           <div className="rounded-3xl border border-[#E5E5E5] bg-white p-4 shadow-sm sm:p-6">
             <img src={articleDetail.image} alt={articleDetail.title} className="h-56 w-full rounded-2xl object-cover sm:h-96" />
             <div className="mt-6 flex flex-wrap items-center gap-3 text-xs font-semibold uppercase tracking-[0.12em] text-[#14D17A]">
@@ -54,6 +56,7 @@ function NewsBlog() {
     <>
       <PageMeta title="News & Blog" description="Read the latest FT7 Game news, guides, and update articles from the FT7 information website." />
       <main className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="mb-8"><BrandMark /></div>
         <SectionHeading
           eyebrow="News & Blog"
           title="Latest FT7 Game News & Blog"

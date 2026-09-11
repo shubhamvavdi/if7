@@ -1,5 +1,6 @@
 import PageMeta from '../components/PageMeta';
 import SectionHeading from '../components/SectionHeading';
+import BrandMark from '../components/BrandMark';
 
 const sections = [
   {
@@ -41,6 +42,7 @@ function Disclaimer() {
     <>
       <PageMeta title="Disclaimer" description="Disclaimer and informational notice for FT7 Game website users." />
       <main className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="mb-8"><BrandMark /></div>
         <SectionHeading
           eyebrow="Disclaimer"
           title="Disclaimer"

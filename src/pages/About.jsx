@@ -1,5 +1,6 @@
 import PageMeta from '../components/PageMeta';
 import SectionHeading from '../components/SectionHeading';
+import BrandMark from '../components/BrandMark';
 
 const contentBlocks = [
   {
@@ -33,6 +34,7 @@ function About() {
     <>
       <PageMeta title="About FT7 Game Information Website" description="Learn about the purpose, editorial approach, and responsible information focus behind the FT7 Game information website." />
       <main className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="mb-8"><BrandMark /></div>
         <SectionHeading
           eyebrow="About Us"
           title="About FT7 Game Information Website"

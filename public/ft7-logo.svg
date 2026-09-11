@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 768" fill="none">
+  <rect width="760" height="768" rx="92" fill="#050505"/>
+  <defs>
+    <linearGradient id="red" x1="120" y1="110" x2="520" y2="530" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF3B3B"/>
+      <stop offset=".48" stop-color="#F00012"/>
+      <stop offset="1" stop-color="#9E000A"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="130" y1="570" x2="640" y2="650" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFB300"/>
+      <stop offset=".5" stop-color="#FFF06A"/>
+      <stop offset="1" stop-color="#E68A00"/>
+    </linearGradient>
+    <linearGradient id="silver" x1="210" y1="360" x2="620" y2="270" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#777"/>
+      <stop offset=".5" stop-color="#FFF"/>
+      <stop offset="1" stop-color="#AAA"/>
+    </linearGradient>
+  </defs>
+  <path d="M106 110h278l-58 94H177l-54-94h-17Zm315 0h244l-58 96H464l-47 69v170l-59 72V274l63-164Z" fill="url(#red)" stroke="#FF3038" stroke-width="5"/>
+  <path d="M462 222h151l-58 86H519l-51 67v-91l-6-14Z" fill="#E90012" stroke="#FF363D" stroke-width="5"/>
+  <path d="M164 495c66-55 132-83 198-101-60 38-109 76-153 117 40 18 88 24 142 21-74 20-145 18-204-1l17-36Z" stroke="#F2F2F2" stroke-width="14"/>
+  <path d="M481 365c62-24 124-31 184-12-57-4-105 9-149 33l-35-21Z" fill="url(#silver)"/>
+  <text x="105" y="642" fill="url(#gold)" font-family="Arial Black,Arial,sans-serif" font-size="91" font-style="italic" font-weight="900" letter-spacing="3">FT7</text>
+  <circle cx="323" cy="613" r="13" fill="#EF233C"/>
+  <text x="360" y="642" fill="url(#gold)" font-family="Arial Black,Arial,sans-serif" font-size="72" font-style="italic" font-weight="900" letter-spacing="1">GAME</text>
+  <path d="M105 670h514l-48 25H153l-48-25Z" fill="#E60012"/>
+  <path d="m330 670 33 35 33-35h-66Z" fill="#E60012"/>
+</svg>
