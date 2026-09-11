@@ -1,13 +1,14 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Download, Sparkles } from 'lucide-react';
+import { ArrowRight, Sparkles } from 'lucide-react';
 import { FT7_GAME_URL } from '../data/siteConfig';
 import CTAButton from './CTAButton';
 import BrandMark from './BrandMark';
 
 function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[#07110E]">
-      <div className="absolute inset-x-0 top-0 h-80 bg-[radial-gradient(circle_at_top,_rgba(20,209,122,0.18),_transparent_60%)]" />
+    <section className="premium-hero relative overflow-hidden bg-[#07110E]">
+      <div className="premium-grid absolute inset-0" />
+      <div className="premium-hero-glow absolute inset-x-0 top-0 h-80" />
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:px-8 lg:py-24">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
@@ -39,10 +40,9 @@ function Hero() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="relative flex items-center justify-center"
         >
-          <div className="absolute -left-8 top-8 h-40 w-40 rounded-full bg-[#14D17A]/15 blur-3xl" />
-          <div className="absolute -right-8 bottom-8 h-52 w-52 rounded-full bg-[#F4B400]/18 blur-3xl" />
+          <div className="premium-orbit absolute inset-10 rounded-full border border-[#14D17A]/15" />
 
-          <div className="relative mx-auto w-full max-w-md rounded-[32px] border border-[#1C2A2F] bg-[#0B1316] p-3 shadow-[0_30px_80px_rgba(20,209,122,0.12)]">
+          <div className="premium-panel relative mx-auto w-full max-w-md rounded-[32px] border border-[#1C2A2F] bg-[#0B1316] p-3 shadow-[0_30px_80px_rgba(20,209,122,0.12)]">
             <div className="rounded-[28px] border border-[#1C2A2F] bg-[#0E1719] p-4">
               <div className="mb-4 flex items-center justify-center gap-2">
                 <span className="h-2.5 w-2.5 rounded-full bg-[#14D17A]" />
@@ -57,15 +57,15 @@ function Hero() {
                 </div>
                 <h2 className="mt-5 text-3xl font-bold tracking-tight text-[#EAF5F1]">FT7 App</h2>
                 <div className="mt-6 space-y-3">
-                  <div className="flex items-center justify-between rounded-xl bg-[#14D17A]/8 px-3 py-3">
+                  <div className="premium-stat flex items-center justify-between rounded-xl bg-[#14D17A]/8 px-3 py-3">
                     <span className="text-sm text-[#A7B8B2]">App size</span>
                     <span className="text-sm font-semibold text-[#14D17A]">21.8 MB</span>
                   </div>
-                  <div className="flex items-center justify-between rounded-xl bg-[#14D17A]/8 px-3 py-3">
+                  <div className="premium-stat flex items-center justify-between rounded-xl bg-[#14D17A]/8 px-3 py-3">
                     <span className="text-sm text-[#A7B8B2]">Version</span>
                     <span className="text-sm font-semibold text-[#14D17A]">1.2.1</span>
                   </div>
-                  <div className="flex items-center justify-between rounded-xl bg-[#14D17A]/8 px-3 py-3">
+                  <div className="premium-stat flex items-center justify-between rounded-xl bg-[#14D17A]/8 px-3 py-3">
                     <span className="text-sm text-[#A7B8B2]">Downloads</span>
                     <span className="text-sm font-semibold text-[#14D17A]">100K+</span>
                   </div>
