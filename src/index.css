@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #eaf5f1;
+  background: #07110e;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at top, rgba(20, 209, 122, 0.12), transparent 36%),
+    linear-gradient(180deg, #07110e 0%, #091112 100%);
+  color: #eaf5f1;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  color: #eaf5f1;
+}
+
+p {
+  margin: 0;
+}
+
+::selection {
+  background: rgba(20, 209, 122, 0.35);
+  color: #f5fff9;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary {
+  list-style: none;
+}
+
+:focus-visible {
+  outline: 2px solid #14d17a;
+  outline-offset: 2px;
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+html[data-theme='light'] body {
+  background: #f3f8f5;
+  color: #12201c;
+}
+
+html[data-theme='light'] [class*='bg-[#091112]'],
+html[data-theme='light'] [class*='bg-[#0D1719]'],
+html[data-theme='light'] [class*='bg-[#0B1316]'],
+html[data-theme='light'] [class*='bg-[#07110E]'] {
+  background: #f3f8f5 !important;
+}
+
+html[data-theme='light'] [class*='bg-[#101B1E]'] {
+  background: #ffffff !important;
+}
+
+html[data-theme='light'] [class*='bg-[#070B0D]'] {
+  background: #ffffff !important;
+}
+
+html[data-theme='light'] [class*='text-[#EAF5F1]'] {
+  color: #12201c !important;
+}
+
+html[data-theme='light'] [class*='text-[#A7B8B2]'] {
+  color: #53635d !important;
+}
+
+html[data-theme='light'] [class*='text-[#7E8D88]'] {
+  color: #6c7c75 !important;
+}
+
+html[data-theme='light'] [class*='border-[#1C2A2F]'] {
+  border-color: #dbe7e1 !important;
+}
+
+html[data-theme='light'] [class*='bg-[linear-gradient'] {
+  background: #ffffff !important;
+}
+
+html[data-theme='dark'] [class*='bg-white'] {
+  background: #101b1e !important;
+}
+
+html[data-theme='dark'] [class*='bg-[#F7F7F7]'] {
+  background: #0d1719 !important;
+}
+
+html[data-theme='dark'] [class*='border-[#E5E5E5]'] {
+  border-color: #1c2a2f !important;
+}
+
+html[data-theme='dark'] [class*='text-[#222222]'] {
+  color: #eaf5f1 !important;
+}
+
+html[data-theme='dark'] [class*='text-[#666666]'] {
+  color: #a7b8b2 !important;
+}
+
+html[data-theme='dark'] [class*='text-[#888888]'] {
+  color: #7e8d88 !important;
+}
