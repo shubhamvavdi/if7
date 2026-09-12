@@ -1,6 +1,9 @@
 import PageMeta from '../components/PageMeta';
 import SectionHeading from '../components/SectionHeading';
 import BrandMark from '../components/BrandMark';
+import CTAButton from '../components/CTAButton';
+import { Download } from 'lucide-react';
+import { FT7_GAME_URL } from '../data/siteConfig';
 
 const contentBlocks = [
   {
@@ -40,6 +43,12 @@ function About() {
           title="About FT7 Game Information Website"
           description="This website provides general information, updates, and referral-oriented content related to FT7 Game, FT7 App, and FT7 APK. It is intended to be helpful, readable, and responsible without overstating official affiliation or ownership."
         />
+        <div className="mt-7">
+          <CTAButton href={FT7_GAME_URL}>
+            <Download size={17} />
+            DOWNLOAD FT7 GAME
+          </CTAButton>
+        </div>
 
         <div className="mt-10 space-y-6">
           {contentBlocks.map((block, index) => (
