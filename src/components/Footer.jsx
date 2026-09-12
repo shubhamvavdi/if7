@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { SITE_CONFIG, SITE_LINKS } from '../data/siteConfig';
+import { SITE_LINKS } from '../data/siteConfig';
 import BrandMark from './BrandMark';
 
 const quickLinks = [
@@ -7,6 +7,7 @@ const quickLinks = [
   { label: 'About Us', to: SITE_LINKS.about },
   { label: 'News & Blog', to: SITE_LINKS.news },
   { label: 'Disclaimer', to: SITE_LINKS.disclaimer },
+  { label: 'Contact Us', to: SITE_LINKS.contact },
 ];
 
 const infoLinks = [

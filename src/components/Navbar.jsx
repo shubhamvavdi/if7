@@ -11,6 +11,7 @@ const navItems = [
   { label: 'About Us', to: SITE_LINKS.about },
   { label: 'News & Blog', to: SITE_LINKS.news },
   { label: 'Disclaimer', to: SITE_LINKS.disclaimer },
+  { label: 'Contact Us', to: SITE_LINKS.contact },
 ];
 
 function Navbar() {

@@ -1,6 +1,7 @@
 import PageMeta from '../components/PageMeta';
 import SectionHeading from '../components/SectionHeading';
 import BrandMark from '../components/BrandMark';
+import { ShieldCheck } from 'lucide-react';
 
 const sections = [
   {
@@ -33,7 +34,7 @@ const sections = [
   },
   {
     title: 'Contact Information',
-    text: 'Contact information can be added here if the website owner wishes to receive privacy-related questions or concerns. Placeholder contact details should be customized before launch.',
+    text: 'For privacy-related questions or concerns, please contact us at contact@ft7games.com or use the Contact Us page. Please avoid sending sensitive personal information unless it is necessary to help us respond.',
   },
 ];
 
@@ -43,17 +44,33 @@ function PrivacyPolicy() {
       <PageMeta title="Privacy Policy" description="Privacy policy information for the FT7 Game informational website." />
       <main className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="mb-8"><BrandMark /></div>
-        <SectionHeading
-          eyebrow="Privacy Policy"
-          title="Privacy Policy"
-          description="This privacy policy is intended to provide general guidance and should be customized for the website owner’s actual collection, analytics, and contact practices."
-        />
+        <div className="grid gap-8 lg:grid-cols-[0.7fr_1.3fr] lg:items-end">
+          <div className="flex items-center gap-4 rounded-3xl border border-[#CBA65C]/30 bg-[#101B1E] p-6 shadow-[0_20px_60px_rgba(203,166,92,0.1)]">
+            <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-[#CBA65C]/15 text-[#CBA65C]">
+              <ShieldCheck size={28} />
+            </div>
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#CBA65C]">Your privacy matters</p>
+              <p className="mt-2 text-sm leading-6 text-[#C3C7BD]">A clear look at what this informational website may collect and why.</p>
+            </div>
+          </div>
+          <SectionHeading
+            eyebrow="Privacy Policy"
+            title="Privacy, without the fine-print fog"
+            description="This policy explains how the FT7 Game information website may handle basic visitor data, cookies, analytics, and third-party links."
+          />
+        </div>
 
         <div className="mt-10 space-y-6">
-          {sections.map((section) => (
-            <section key={section.title} className="rounded-3xl border border-[#E5E5E5] bg-white p-6 shadow-sm sm:p-8">
-              <h2 className="text-2xl font-bold text-[#222222]">{section.title}</h2>
+          {sections.map((section, index) => (
+            <section key={section.title} className="rounded-3xl border border-[#E5E5E5] bg-white p-6 shadow-sm transition-transform hover:-translate-y-0.5 sm:p-8">
+              <div className="flex items-start gap-4">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#CBA65C]/15 text-sm font-bold text-[#8f6d2d]">{String(index + 1).padStart(2, '0')}</span>
+                <div>
+                  <h2 className="text-2xl font-bold text-[#222222]">{section.title}</h2>
               <p className="mt-4 text-base leading-8 text-[#666666]">{section.text}</p>
+                </div>
+              </div>
             </section>
           ))}
         </div>

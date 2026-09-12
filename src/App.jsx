@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import NewsBlog from './pages/NewsBlog';
 import Disclaimer from './pages/Disclaimer';
+import ContactUs from './pages/ContactUs';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsConditions from './pages/TermsConditions';
 import NotFound from './pages/NotFound';
@@ -22,6 +23,7 @@ function App() {
             <Route path="/news-blog" element={<NewsBlog />} />
             <Route path="/news-blog/:slug" element={<NewsBlog />} />
             <Route path="/disclaimer" element={<Disclaimer />} />
+            <Route path="/contact-us" element={<ContactUs />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-conditions" element={<TermsConditions />} />
             <Route path="*" element={<NotFound />} />

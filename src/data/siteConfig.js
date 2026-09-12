@@ -5,7 +5,7 @@ export const SITE_CONFIG = {
   description: 'General information, guides and updates related to FT7 Game.',
   defaultMetaDescription:
     'FT7 Game information, guides, updates, and general resources for FT7 App and FT7 APK.',
-  email: '',
+  email: 'contact@ft7games.com',
 };
 
 export const FT7_APP_DETAILS = [
@@ -28,6 +28,7 @@ export const SITE_LINKS = {
   about: '/about',
   news: '/news-blog',
   disclaimer: '/disclaimer',
+  contact: '/contact-us',
   privacy: '/privacy-policy',
   terms: '/terms-conditions',
 };
