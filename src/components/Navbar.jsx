@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { Menu, Moon, Sun, X } from 'lucide-react';
+import { Download, Menu, Moon, Sun, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FT7_GAME_URL, SITE_LINKS } from '../data/siteConfig';
 import BrandMark from './BrandMark';
@@ -46,9 +46,10 @@ function Navbar() {
             href={FT7_GAME_URL}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center justify-center rounded-full bg-[#14D17A] px-5 py-2.5 text-sm font-semibold text-[#07110E] transition-colors hover:bg-[#0FAE66]"
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-[#14D17A] px-5 py-2.5 text-sm font-semibold text-[#07110E] transition-colors hover:bg-[#0FAE66]"
           >
-            OPEN FT7 GAME
+            <Download size={16} />
+            DOWNLOAD APP
           </a>
         </div>
 
@@ -102,9 +103,10 @@ function Navbar() {
                 target="_blank"
                 rel="noreferrer"
                 onClick={() => setMenuOpen(false)}
-                className="mt-2 inline-flex items-center justify-center rounded-full bg-[#14D17A] px-5 py-3 text-sm font-semibold text-[#07110E]"
+                className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-[#14D17A] px-5 py-3 text-sm font-semibold text-[#07110E]"
               >
-                OPEN FT7 GAME
+                <Download size={17} />
+                DOWNLOAD APP
               </a>
               <button
                 type="button"

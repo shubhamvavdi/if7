@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Sparkles } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { FT7_GAME_URL } from '../data/siteConfig';
 import CTAButton from './CTAButton';
 import BrandMark from './BrandMark';
@@ -76,12 +77,12 @@ function Hero() {
                   <p className="text-xs uppercase tracking-[0.2em] text-[#7E8D88]">Status</p>
                   <p className="mt-1 text-sm font-semibold text-[#EAF5F1]">App overview</p>
                 </div>
-                <button
-                  type="button"
+                <Link
+                  to="/about"
                   className="inline-flex items-center gap-2 rounded-full bg-[#14D17A] px-4 py-2 text-sm font-semibold text-[#07110E] hover:bg-[#0FAE66]"
                 >
                   View Details <ArrowRight size={14} />
-                </button>
+                </Link>
               </div>
             </div>
           </div>
